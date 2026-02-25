@@ -1,0 +1,14 @@
+ Ignore secrets
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# dbt
+profiles.yml
+target/
+dbt_packages/
+logs/

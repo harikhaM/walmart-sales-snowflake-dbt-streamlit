@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: source
+    database: MYDB
+    schema: BRONZE
+    tables:
+      - name: BRONZE_FACT_RAW
+      - name: BRONZE_DEPT_RAW
+      - name: BRONZE_STORES_RAW
+
+  - name: xfm
+    database: MYDB
+    schema: SILVER
+    tables:
+      - name: WORK_FACT_TRANSFORM
